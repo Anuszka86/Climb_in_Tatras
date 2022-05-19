@@ -1,0 +1,294 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "name": "Gerlach",
+        "nameSK": "Gerlachovský štít",
+        "valley": [
+          "Dolina Batyżowiecka",
+          "Dolina Wielicka"
+        ],
+        "height": 2654,
+        "tatryNFO": ["http://www.tatry.nfo.sk/stenae.php?kod=0180058:Gerlachovsk%FD-%9At%EDt:2655",
+        "http://www.tatry.nfo.sk/stenae.php?kod=01800818:Gerlachovsk%FD-%9At%EDt:2655"],
+        "images": ["Gerlach_SW.jpg", "Gerlach_E.jpg", "Gerlach_E-2.jpg"],
+        "routes":
+          {
+            "SW": [
+              "Północno-zachodnie rzebro (II)",
+              "Lewą stroną ściany (III)",
+              "Lewym filarem na południowo-zachodnie rzebro (III - IV)",
+              "Prawą stroną filara (V-)",
+              "Brnenská cesta (VI/A0 OS 6)",
+              "Środkowy filar (V)",
+              "Polska droga (VI-)",
+              "Droga Galfiego (VI)",
+              "Přerovská cesta (6+ oryg. V, A1)",
+              "Płyty Kirssaka (V)",
+              "Samuhelov komín (IV/V-)",
+              "Malá varianta (V)",
+              "Zacięciem (V, A2, RP 6+)",
+              "Granią (IV+)",
+              "Komin Sawickiego (V)",
+              "Jackovičov variant (V+)",
+              "Kadilak (VI+)",
+              "Końcowa płyta (VI-)"
+            ],
+            "E": [
+              "Droga Stanisławskiego (IV)",
+              "Kuchařova cesta prostriedkom (V-VI)",
+              "Kupczykova cesta (V-VI)",
+              "Mátray - Rybanský (V+)",
+              "Beneš - Šafránek (V+,A0)",
+              "Drlík - Orolín (V+,A3, RP: M8-)",
+              "Belzebub (V+/VI-)",
+              "Gerlachovský kút (VI)"
+            ]
+          }
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.134055614471436,
+          49.16402036645431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "name": "Batyżowiecki Szczyt",
+        "nameSK": "Batizovský štít",
+        "valley": [
+          "Dolina Batyżowiecka"
+        ],
+        "height": 2448,
+        "tatryNFO": ["http://www.tatry.nfo.sk/stenae.php?kod=00370715:Batizovsk%FD-%9At%EDt:2448",
+          "http://www.tatry.nfo.sk/stenae.php?kod=00370810:Batizovsk%FD-%9At%EDt:2448"],
+        "images": ["Batyzowiecki_S.jpg", "Batyzowiecki_SW.jpg"],
+        "routes":
+          {
+            "S": [
+              "S. Bernadzikiewicz, A. Kenar (III)",
+              "Droga Tatarki (IV+, A0)",
+              "Droga Kutty (IV+/V-)",
+              "F. Gažo, I. Gálfy (V)",
+              "J. Koršala, P. Vavro (V-VI)",
+              "Čihulov pilier (V, A1,RP V+ )",
+              "R. Kubín, V. Roland (V)",
+              "Droga Komarnickich (IV)",
+              "Południowy filar - Kuffa (V)",
+              "Tatarka-Michalko, (IV+,A1,A2, RP:VII-, A0 )",
+              "Południowo-wschodnia droga (IV+,A0)",
+              "A. Puškáš, T. Tóth, (III-IV)",
+              "Pytlákův expres, (VI+)",
+              "Zimny Prysznic, (VI)",
+              "Pilierissima, (VII)"
+            ],
+            "SW": ["Skrajna lewą depresją (V)",
+              "Depresją (V)",
+              "Čiernobiele sokolíky, (VI+)",
+              "Variant stokom vody (V+,A0)",
+              "Josemicka, (IV+,A0)",
+              "L. Lapúnik, B. Čiernik (VI)",
+              "H. Przedpelska, M. Czachor (V+)",
+              "M. Griesel, V. Petrík (IV+,A1)",
+              "S. Bernadzikiewicz, A. Kenar (III)",
+              "Hermelin Light, (VII-)"]
+          }
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.124249458312985,
+          49.1653182245806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "name": "Baranie Rogi",
+        "nameSK": "Baranie rohy",
+        "valley": [
+          "Dolina Małej Zimnej Wody"
+        ],
+        "height": 2536,
+        "tatryNFO": ["http://www.tatry.nfo.sk/stenae.php?kod=00230815:Baranie-rohy:2536"],
+        "images": ["Baranie_S.jpg", "Baranie_S2.jpg", "Baranie_S3.jpg"],
+        "routes":
+          {
+            "S": [
+              "Bocek - Ondrová - Puškáš (IV-V)",
+              "Lewy filar południowo-zachodni(IV)",
+              "Droga Šádka (IV)",
+              "Lewa depresja - Lukeš - Sysel (IV)",
+              "Krzykara - Janota (V-)",
+              "Prostowanie prawej depresji - M. Blahout, B. Karasová, O. Láskavá (V)",
+              "Prawa depresja - V. Heckel, J. Jiříček, V. Karoušek, K. Trousílek(IV-V)",
+              "Prawą częścią południowo-zachodniej ściany - Kutta - Rada (V-VI)",
+              "Barania drabina (III)",
+              "Petríková cesta (V, A1, OS:6+/7-)",
+              "Prvé krôčky (V+/A1, RP 6+)",
+              "Środkowym żlebem południowej ściany (V)",
+              "Prawym żlebem południowej ściany (II-III)",
+              "Traja kamaráti (V+)",
+              "Indiánske leto (VII-)"
+            ]
+          }
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.197162628173828,
+          49.201630421835674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "name": "Czarny szczyt",
+        "nameSK": "Čierny štít",
+        "valley": [
+          "Dolina Kieżmarska"
+        ],
+        "height": 2434,
+        "tatryNFO": ["http://www.tatry.nfo.sk/stenae.php?kod=01030617:%C8ierny-%9At%EDt:2434"],
+        "images": ["Czarny.jpg"],
+        "routes":
+          {
+            "SE": [
+              "Do Papirusovej štrbiny (III)",
+              "T. Szafka, E. Lindner (III)",
+              "Depresja STanisławskiego (IV-)",
+              "Filar Puškáša (IV)",
+              "Prostowanie Filaru Puškáša (V)",
+              "Droga Šádka (IV+)",
+              "Droga Solickiego (V+) wariant (VI-)",
+              "Prostredné vhĺbenie (V-)",
+              "Prostredné vhĺbenie - wariant prostujący(?)",
+              "Prawy filar (V?)",
+              "Komin Motyki (V)",
+              "Rázek, Plešmíd (VI,A2)",
+              "Čepelova cesta (V,A2, var OS 7+)",
+              "Cesta Dieškovcov (V,A2)",
+              "Pravý zárez (V)",
+              "Ešte jednu prosím (V+)"
+            ]
+          }
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2008,
+          49.2053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "name": "Wołowa Turnia",
+        "nameSK": "Volia veža",
+        "valley": [
+          "Dolina Mięguszowiecka"
+        ],
+        "height": 2355,
+        "tatryNFO": ["http://www.tatry.nfo.sk/stenae.php?kod=09870818:Volia-ve%9Ea:2355"],
+        "images": ["Wolowa.jpg", "Wolowa2.jpg"],
+        "routes":
+          {
+            "SW": [
+              "Lewa część południowo-zachodniego filara (IV)",
+              "Droga płytami (VI-VII)",
+              "Stupid wall (VII)",
+              "Droga Puškáša (VI+)",
+              "Kývala-Orolín-Zeitler (V+,A3, RP 7)",
+              "Wariant Wolfów (V, A2, PP 9-)",
+              "Medviďova cesta (9+)",
+              "Eštok - Janiga (VI,A2, RP 6+ / 7-)",
+              "Hviezdova cesta (V+,A0,RP 6/6+)",
+              "Komin Puškáša komín (V)",
+              "Droga Stanisławskiego (V)",
+              "Direttissima - Schauhuber (VI, pôv. VI,A2)",
+              "Direttissima - Belica (VI+, pôv. V+,A3)",
+              "Štáflovka (V)",
+              "Południowe rzebro (III)",
+              "Południowo-wschodnią ścianą (II)",
+              "Hviezdy a búrky (VII)",
+              "Moribundus (VII-)",
+              "Medzi legendami (VIII-)"
+            ]
+          }
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.075106024742126,
+          49.17889108047652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "name": "Ostry Szczyt",
+        "nameSK": "Ostrý štít",
+        "valley": [
+          "Dolina Staroleśna"
+        ],
+        "height": 2360,
+        "tatryNFO": ["http://www.tatry.nfo.sk/stenae.php?kod=05610710:Ostr%FD-%9At%EDt:2360",
+        "http://www.tatry.nfo.sk/stenae.php?kod=0561086:Ostr%FD-%9At%EDt:2360"],
+        "images": ["Ostry_S.jpg", "Ostry_SW.jpg"],
+        "routes":
+          {
+            "S": [
+              "Droga Motyki (IV)",
+              "Komin Świerza (II-III)",
+              "Droga Häberleina (III-IV)",
+              "Cesta Spišských vodcov (III)",
+              "Došek - Komárek (IV)",
+              "Petráň - Charvátová (IV)",
+              "Jurzycova cesta (II-III)",
+              "Ostrá realita (VIII-)",
+              "Łopata (V-)",
+              "Primula minima (VI)"
+            ],
+
+            "SW": [
+              "Vánoční chvěst od Herbika (V,A2)",
+              "Droga Motyki przez Jaskinki (V)",
+              "Komin Zamkowskiego (V)",
+              "Wariant lewą górną częścią ściany (V-VI)",
+              "Žlté nebezpečenstvo (V)",
+              "Ostrzem południowo-zachodniego filara (V)"
+
+            ]
+          }
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.17638087272644,
+          49.18865983015878
+        ]
+      }
+    }
+  ]
+}
