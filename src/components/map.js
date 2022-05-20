@@ -36,7 +36,7 @@ export function MyMap() {
 
 
     return (
-<>
+<section id="my-map">
         <Search data={data.map(el => el.properties.name)} onSearch={handleDoneSearch} />
         <MapContainer center={[
             ...centralPoint
@@ -83,7 +83,7 @@ export function MyMap() {
             )}
 
         </MapContainer>
-</>
+</section>
     );
 }
 

@@ -1,1 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
+@import "assets/SCSS/variables";
+@import '~leaflet/dist/leaflet.css';
+
+body {
+  background-color: $color1;
+}

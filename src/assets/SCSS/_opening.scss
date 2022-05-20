@@ -1,0 +1,34 @@
+@use "variables";
+@use "sass:color";
+.opening{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../mieguszowiecka.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+  min-height: 500px;
+  h1 {
+    color: variables.$color2;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(210, 225, 221, 0.5);
+    padding: 10px 40px;
+    border-radius: 15px;
+  }
+  button {
+    background-color: variables.$color3;
+    color: variables.$color5;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 6px 6px #00000029;
+    &:hover {
+      background-color: color.scale(variables.$color3, $lightness: -15%);
+    }
+  }
+}

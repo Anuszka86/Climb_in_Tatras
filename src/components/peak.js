@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import mountainData from "../data/mountainData.json";
-import iconMountain from "../assets/mounts.svg"
+import iconWall from "../assets/wall.png"
+import iconLink from "../assets/mountain-route.png"
 export function Peak({peak}) {
 
 
@@ -15,15 +16,15 @@ export function Peak({peak}) {
                 {Object.entries(peak?.routes).map(el => {
                     return (
                         <div>
+                            <img height="60x" width="60px" src={iconWall}/>
                             <h4>Ściana: {el[0]}</h4>
                             <ol>{el[1].map(e => <li>{e}</li>)}</ol>
                         </div>
                     )
                 })}
                 {peak?.images && (Object.values(peak?.images).map(pic => <img src={require(`../data/${pic}`)}/>))}
-                <p>Zdjęcia pochodzą ze strony tatry.nfo.sk</p>
-                <p>Więcej informacji oraz schematy dróg znajdziesz tu:</p>
-                {Object.values(peak?.tatryNFO).map(el => <a href={el}><img height="40px" width="40px" src={iconMountain}/></a>)}
+                <p>Zdjęcia z wyrysowanymi drogami pochodzą ze strony tatry.nfo.sk. Opisy oraz schematy dróg znajdziesz tu:</p>
+                {Object.values(peak?.tatryNFO).map(el => <a href={el}><img height="60px" width="60px" src={iconLink}/></a>)}
                 {/*    <img src={require(`../data/${peak.images}`)}/>*/}
             </div>
         </div>

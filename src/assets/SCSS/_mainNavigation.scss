@@ -1,0 +1,25 @@
+@use "variables";
+@use "sass:color";
+
+.menu {
+  width: 100%;
+  box-shadow: 0 6px 6px #00000029;
+  position: relative;
+  height: clamp(60px, 10vh, 70px);
+  background-color: variables.$color3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ a {
+   padding: 0 15px;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-decoration: none;
+   color: variables.$color2;
+ }
+  a:hover {
+    color: variables.$color1;
+     }
+
+  }
+

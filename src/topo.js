@@ -1,15 +1,17 @@
 import React from 'react';
-/*import './Main.scss';*/
+
 
 import {TopoNavigation} from "./components/topoNavigation";
+import {MainNavigation} from "./components/mainNavigation";
 
 function Topo() {
     return (
-        <div >
-
-            <TopoNavigation></TopoNavigation>
-        </div>
-
+        <>
+            <MainNavigation/>
+            <div>
+                <TopoNavigation></TopoNavigation>
+            </div>
+        </>
     );
 }
 

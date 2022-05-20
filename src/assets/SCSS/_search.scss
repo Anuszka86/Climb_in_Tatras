@@ -1,0 +1,36 @@
+@use "variables";
+@use "sass:color";
+
+.searching_unit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(40px, 10vh, 70px);
+  background-color: variables.$color5;
+  box-shadow: 0 6px 6px #00000029;
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: variables.$color2;
+    margin: 0 20px;
+  }
+
+  input {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid variables.$color2;
+
+    &:focus {
+      border: 1px solid variables.$color3
+    }
+  }
+}
+
+.searching_button {
+  border-radius: 5px;
+  border: none;
+  background-color: variables.$color5;
+}

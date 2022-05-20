@@ -1,6 +1,6 @@
-import {React, useState, useEffect} from 'react'
-import iconSearch from "../assets/search.svg"
-
+import {React, useState, useEffect} from 'react';
+import iconSearch from "../assets/search.svg";
+import "./../assets/SCSS/_search.scss";
 
 export function Search({data, onSearch}) {
     const [searchTerm, setSearchTerm] = useState("");
@@ -80,17 +80,17 @@ const handleDoneClick = () => {
     };
 
     return(
-        <div>
-            <label>Wyszukaj na mapie</label>
+        <div className="searching_unit">
+            <h4>Szczyty na których znajdują się drogi wspinaczkowe opisane w topo</h4>
             <input
                 type = "text"
-                placeholder = "Znajdź szczyt"
+                placeholder = "Znajdź na mapie"
                 value={searchTerm}
                 onChange = {handleChange}
                 onKeyDown={handleKeyDown}
             />
             {suggestionsActive && <Suggestions />}
-            <button onClick={handleDoneClick}> <img height="40px" width="40px" src={iconSearch} /> </button>
+            <button className="searching_button" onClick={handleDoneClick}> <img height="40px" width="40px" src={iconSearch} /> </button>
 
         </div>
     )
