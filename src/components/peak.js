@@ -9,7 +9,7 @@ export function Peak({peak}) {
     return (
         <div>
             <h2>{peak?.name} / {peak?.nameSK} - {peak?.height} m n.p.m.</h2>
-            {/*<h3>Rejon: {peak?.valley} </h3>*/}
+
             <h3>Rejon: {Object.values(peak?.valley).map(el => <h3>{el}</h3>)}</h3>
             <div>
                 {Object.entries(peak?.routes).map(el => {

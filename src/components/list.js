@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import mountainData from "../data/mountainData.json";
 import {Peak} from "./peak";
 
-export function PeaksList() {
+export function PeaksList({data}) {
     const [selected, setSelected] = useState(null)
 
     return (
         <div >
-            <h1>Lista gór z drogami wspinaczkowymi</h1>
+            <h2>Ściany z drogami z drogami wspinaczkowymi</h2>
             <ul>
-                {mountainData.features?.map(feature => {
+                {data?.map(feature => {
                     return (
 
                             <button key={feature.properties.id} onClick={() => setSelected(feature)}>{feature.properties.name}</button>
