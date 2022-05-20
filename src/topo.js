@@ -1,11 +1,13 @@
 import React from 'react';
 /*import './Main.scss';*/
-import {PeaksList} from "./components/list";
+
+import {TopoNavigation} from "./components/topoNavigation";
+
 function Topo() {
     return (
         <div >
-            Tu znajdziesz topo tatrzańskich ścian
-            <PeaksList></PeaksList>
+
+            <TopoNavigation></TopoNavigation>
         </div>
 
     );

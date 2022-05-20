@@ -37,7 +37,7 @@ export function MyMap() {
 
     return (
 <>
-        <Search onSearch={handleDoneSearch} />
+        <Search data={data.map(el => el.properties.name)} onSearch={handleDoneSearch} />
         <MapContainer center={[
             ...centralPoint
         ]} zoom={12} scrollWheelZoom={true}>
