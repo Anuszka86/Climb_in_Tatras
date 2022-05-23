@@ -18,19 +18,46 @@
   }
 
   input {
-    height: 35px;
+   padding: 7px;
     width: 300px;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid variables.$color2;
+    color: variables.$color1;
 
-    &:focus {
-      border: 1px solid variables.$color3
-    }
   }
 }
 
 .searching_button {
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   background-color: variables.$color5;
+  &:hover {
+    box-shadow: 0 6px 6px #00000029;
+  }
+}
+.clear_button {
+  background-color: variables.$color3;
+  color: variables.$color5;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: none;
+  &:hover {
+    box-shadow: 0 6px 6px #00000029;
+  }
+}
+.suggestions {
+  color: variables.$color2;
+  list-style: none;
+  position: absolute;
+  z-index: 900;
+  background: white;
+  border: 1px solid variables.$color3;
+  width: 300px;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+.active {
+  background-color: variables.$color4;
 }

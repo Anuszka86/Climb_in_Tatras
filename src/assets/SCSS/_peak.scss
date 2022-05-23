@@ -1,0 +1,17 @@
+@use "variables";
+@use "sass:color";
+
+.disclaimer {
+  margin: 25px;
+  color: variables.$color2;
+  font-weight: bold;
+}
+
+img.disclaimer {
+  background-color: variables.$color5;
+  border-radius: 7px;
+  border: 1px solid variables.$color3;
+  box-shadow: 0 6px 6px #00000029;
+  &:hover
+  {box-shadow: 0 6px 6px #00000075};
+}

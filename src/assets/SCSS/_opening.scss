@@ -5,10 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-image: url(../mieguszowiecka.jpg);
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   min-height: 500px;
   h1 {
@@ -18,7 +17,7 @@
     background-color: rgba(210, 225, 221, 0.5);
     padding: 10px 40px;
     border-radius: 15px;
-  }
+      }
   button {
     background-color: variables.$color3;
     color: variables.$color5;
@@ -28,7 +27,8 @@
     border: none;
     box-shadow: 0 6px 6px #00000029;
     &:hover {
-      background-color: color.scale(variables.$color3, $lightness: -15%);
+      background-color: color.scale(variables.$color3, $lightness: -25%);
     }
   }
+
 }

@@ -1,0 +1,50 @@
+@use "variables";
+
+.topo_main {
+  background-color: variables.$color5;
+  display: flex;
+  flex-direction: column;
+  color: variables.$color1;
+  align-items: center;
+
+  h2 {
+    color: variables.$color2;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(210, 225, 221, 0.5);
+    padding: 10px 40px;
+    border-radius: 15px;
+  }
+}
+
+div.carousel_container {
+  height: 90vh;
+  position: relative;
+}
+
+img.carousel_container {
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+.carousel_caption {
+  border-radius: 15px;
+  padding: 0;
+  padding-bottom: 10px;
+  background-color: rgba(210, 225, 221, 0.2);
+  color: variables.$color5;
+  font-weight: bold;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}

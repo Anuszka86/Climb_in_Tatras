@@ -1,8 +1,10 @@
 import {React, useState, useEffect} from 'react';
 import iconSearch from "../assets/search.svg";
 import "./../assets/SCSS/_search.scss";
+import iconMarker from "../assets/marker-top.svg"
 
-export function Search({data, onSearch}) {
+
+export function Search({data, onSearch, onClear}) {
     const [searchTerm, setSearchTerm] = useState("");
     const [suggestions, setSuggestions] = useState([]);
     const [suggestionIndex, setSuggestionIndex] = useState(0);
@@ -24,8 +26,6 @@ export function Search({data, onSearch}) {
             setSuggestionsActive(false);
         }
     };
-
-
 
 
     const handleClick = (e) => {
@@ -53,24 +53,31 @@ export function Search({data, onSearch}) {
             setSearchTerm(suggestions[suggestionIndex]);
             setSuggestionIndex(0);
             setSuggestionsActive(false);
+            onSearch(searchTerm)
         }
     };
-const handleDoneClick = () => {
-    if (typeof onSearch === "function") {
-        onSearch(searchTerm)
-    }
+    const handleDoneClick = () => {
+        if (typeof onSearch === "function") {
+            onSearch(searchTerm)
+        }
     };
 
+    const handleDoneClear = () => {
+        if (typeof onClear === "function") {
+            onClear()
+        }
+    }
     const Suggestions = () => {
         return (
-            <ul className="suggestions" >
+            <ul className="suggestions">
                 {suggestions.map((suggestion, index) => {
                     return (
                         <li
                             className={index === suggestionIndex ? "active" : ""}
                             key={index}
                             onClick={handleClick}
-                                                    >
+
+                        >
                             {suggestion}
                         </li>
                     );
@@ -79,19 +86,22 @@ const handleDoneClick = () => {
         );
     };
 
-    return(
+    return (
         <div className="searching_unit">
             <h4>Szczyty na których znajdują się drogi wspinaczkowe opisane w topo</h4>
-            <input
-                type = "text"
-                placeholder = "Znajdź na mapie"
-                value={searchTerm}
-                onChange = {handleChange}
-                onKeyDown={handleKeyDown}
-            />
-            {suggestionsActive && <Suggestions />}
-            <button className="searching_button" onClick={handleDoneClick}> <img height="40px" width="40px" src={iconSearch} /> </button>
-
+            <div className="searching_box">
+                <input
+                    type="text"
+                    placeholder="Znajdź na mapie"
+                    value={searchTerm}
+                    onChange={handleChange}
+                    onKeyDown={handleKeyDown}
+                />
+                {suggestionsActive && <Suggestions/>}
+            </div>
+            <button className="searching_button" onClick={handleDoneClick}><img height="40px" width="40px"
+                                                                                src={iconSearch}/></button>
+            <button className="clear_button" onClick={handleDoneClear}> Wszystkie <img height="35px" width="30px" src={iconMarker}/></button>
         </div>
     )
 }
