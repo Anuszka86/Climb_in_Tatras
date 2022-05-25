@@ -5,7 +5,8 @@ import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.css';
 import {carouselData} from "./carouselData";
 import "../assets/SCSS/_topoNavigation.scss";
-
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 export function TopoNavigation() {
     const [selectedRegion, setSelectedRegion] = useState(null);
@@ -36,10 +37,10 @@ export function TopoNavigation() {
                                     src={slide.image}
                                     alt="slider image"
                                 />
-                                <Carousel.Caption className="carousel_caption" onClick={handleNavigation}>
+                               <Link ctiveClass="active" to="peaks_list" spy={true} smooth={true}> <Carousel.Caption className="carousel_caption" onClick={handleNavigation}>
                                     <h3>{slide.caption}</h3>
                                     <p>{slide.description}</p>
-                                </Carousel.Caption>
+                                </Carousel.Caption></Link>
                             </Carousel.Item>
                         )
                     })}

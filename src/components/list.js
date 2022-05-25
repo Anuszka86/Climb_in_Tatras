@@ -8,7 +8,7 @@ export function PeaksList({data}) {
     return (
         <section className="peaks_list">
             <h3>Ściany z drogami z drogami wspinaczkowymi</h3>
-            <ul>
+            <ul id="peaks_list">
                 {data?.map(feature => {
                     return (
 
