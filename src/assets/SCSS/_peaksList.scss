@@ -2,22 +2,30 @@
 @use "sass:color";
 
 .peaks_list {
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 1rem;
    display: flex;
   flex-direction: column;
-  padding: 20px;
+
   color:  variables.$color1;
  h3 {
    color: variables.$color2;
  }
-  button {
+  ul {
+    gap: 1.5rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 
-    font-size: 2rem;
+  button {
+    padding: 5px 15px;
+    font-size: 1.2rem;
     border-radius: 7px;
     border: none;
     background-color: variables.$color4;
     &:hover {
       box-shadow: 0 6px 6px #00000029;;
     }
+  }
   }
 }

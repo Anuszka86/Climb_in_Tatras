@@ -12,6 +12,7 @@
     font-size: 3rem;
     font-weight: bold;
     position: absolute;
+    z-index: 900;
     top: 13%;
     left: 50%;
     transform: translateX(-50%);
@@ -25,6 +26,7 @@
 div.carousel_container {
   height: 90vh;
   position: relative;
+  box-shadow: 0 6px 6px #00000029;
 }
 
 img.carousel_container {
@@ -47,4 +49,13 @@ img.carousel_container {
   p {
     font-size: 1.5rem;
   }
+}
+
+.peaks_list_header {
+  margin: 1rem;
+  color: variables.$color2;
+    font-size: 2rem;
+  font-weight: bold;
+  align-self: center;
+  text-align: center;
 }

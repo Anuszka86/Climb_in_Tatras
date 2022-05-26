@@ -1,0 +1,9 @@
+@use "variables";
+@use "sass:color";
+
+.leaflet-popup-content {
+  color: variables.$color2;
+  h2 {font-size: 1rem;
+  font-weight: bold}
+   span, p {font-size: 0.7rem;}
+}

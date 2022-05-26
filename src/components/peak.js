@@ -11,7 +11,7 @@ export function Peak({peak}) {
         <section className="single_peak">
             <h3>{peak?.name} / {peak?.nameSK} - {peak?.height} m n.p.m.</h3>
 
-            <h4>Rejon: {Object.values(peak?.valley).map(el => <h3>{el}</h3>)}</h4>
+            {Object.values(peak?.valley).map(el => <p>{el}</p>)}
             <div>
                 {Object.entries(peak?.routes).map(el => {
                     return (

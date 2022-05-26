@@ -1,9 +1,14 @@
 @use "variables";
 @use "sass:color";
 
+.single_peak {
+  color: variables.$color2;
+  font-size: 1rem;
+  padding: 0 2rem;
+}
 .disclaimer {
   margin: 25px;
-  color: variables.$color2;
+  color: variables.$color1;
   font-weight: bold;
 }
 

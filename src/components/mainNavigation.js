@@ -11,7 +11,7 @@ export function MainNavigation() {
             <Link to="topo">Ściany i drogi</Link> |{" "}
             <a href="/#my-map">Mapa</a> |{" "}
             <a href="/">Pogoda</a> |{" "}
-            <a href="/">Kontakt</a> |{" "}
+            <a href="/#contact">Kontakt</a> |{" "}
         </nav>
     )
 }

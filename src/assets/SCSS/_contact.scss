@@ -1,2 +1,17 @@
 @use "variables";
 @use "sass:color";
+
+.contact_bar {
+  background-color: variables.$color4;
+  display: flex;
+  justify-content: flex-end;
+padding: 10px 50px;
+  gap: 50px;
+  box-shadow: 0 6px 6px #00000029 inset;
+  p{
+    color: variables.$color2
+  }
+img {
+  box-shadow: 0 6px 6px #00000029;
+}
+}

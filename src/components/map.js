@@ -5,7 +5,7 @@ import {Search} from "./search";
 import mountainData from "../data/mountainData.json";
 import iconMarker from "../assets/marker-top.svg"
 import {ChangeView} from "./changeMapView";
-
+import "../assets/SCSS/_map.scss"
 import 'leaflet/dist/leaflet.css';
 
 import {point} from "leaflet/dist/leaflet-src.esm";
@@ -23,6 +23,7 @@ export function MyMap() {
             setData(mountainData.features)
         }
         setData(prev => prev?.filter(feature => feature.properties?.name.toLowerCase().includes(searchTerm.toLowerCase())));
+        setActivePoint(null);
         /*setCentralPoint([data[0].geometry.coordinates[1], data[0].geometry.coordinates[0]])*/
     }
 
@@ -70,7 +71,7 @@ export function MyMap() {
                 )))}
 
                 {activePoint && (
-                    <Popup
+                    <Popup className="pop_up"
                         position={[
                             activePoint.geometry.coordinates[1],
                             activePoint.geometry.coordinates[0]
@@ -78,9 +79,9 @@ export function MyMap() {
                         onClose={() => {
                             setActivePoint(null);
                         }}
-                        onClick={() => {
+/*                        onClick={() => {
                             setActivePoint(null);
-                        }}
+                        }}*/
                         onKeyDown={() => {
                             setActivePoint(null);
                         }}

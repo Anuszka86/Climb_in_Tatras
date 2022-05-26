@@ -21,6 +21,7 @@ export function TopoNavigation() {
     const handleNavigation = (e) => {
         const selectedName = carouselData[index].caption;
         setSelectedRegion(mountainData.features?.filter(feature => feature?.properties?.valley?.some(el => el.toLowerCase() === selectedName.toLowerCase())));
+        setIsSliding(null);
     };
     const handleSlides = (e) => setIsSliding(prev => isSliding ? null : 5000);
     return (
@@ -31,13 +32,13 @@ export function TopoNavigation() {
                 <Carousel activeIndex={index} onSelect={handleSelect} interval={isSliding}>
                     {carouselData.map((slide, i) => {
                         return (
-                            <Carousel.Item className="carousel_container" onClick={handleSlides}>
+                            <Carousel.Item key={i} className="carousel_container" onClick={handleSlides}>
                                 <img
                                     className="d-block w-100 carousel_container"
                                     src={slide.image}
                                     alt="slider image"
                                 />
-                               <Link ctiveClass="active" to="peaks_list" spy={true} smooth={true}> <Carousel.Caption className="carousel_caption" onClick={handleNavigation}>
+                               <Link activeClass="active" to="peaks_list" spy={true} smooth={true}> <Carousel.Caption className="carousel_caption" onClick={handleNavigation}>
                                     <h3>{slide.caption}</h3>
                                     <p>{slide.description}</p>
                                 </Carousel.Caption></Link>
@@ -46,8 +47,8 @@ export function TopoNavigation() {
                     })}
                 </Carousel>
             </div>
-
-            <PeaksList data={selectedRegion}></PeaksList>
+            {selectedRegion && (<h3 className="peaks_list_header">Wspinanie w rejonie:</h3>)}
+            {selectedRegion && <PeaksList data={selectedRegion}></PeaksList>}
         </section>
     );
 }

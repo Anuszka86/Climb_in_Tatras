@@ -7,13 +7,13 @@ export function PeaksList({data}) {
 
     return (
         <section className="peaks_list">
-            <h3>Ściany z drogami z drogami wspinaczkowymi</h3>
+
             <ul id="peaks_list">
                 {data?.map(feature => {
                     return (
-
-                        <button key={feature.properties.id} onClick={() => setSelected(feature)}>{feature.properties.name}</button>
-
+                        <li key={feature.properties.id}>
+                        <button onClick={() => setSelected(feature)}>{feature.properties.name}</button>
+                </li>
                     )
                 })}
             </ul>
