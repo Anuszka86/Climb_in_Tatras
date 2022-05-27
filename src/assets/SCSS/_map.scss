@@ -1,6 +1,11 @@
 @use "variables";
 @use "sass:color";
 
+.my-map {
+  box-shadow: 0 6px 6px #00000029;
+  position: relative;
+  z-index: 500;
+}
 .leaflet-popup-content {
   color: variables.$color2;
   h2 {font-size: 1rem;

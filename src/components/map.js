@@ -37,7 +37,7 @@ export function MyMap() {
 
 
     return (
-        <section id="my-map">
+        <section id="my-map" className="my-map">
             <Search data={mountainData.features.map(el => el.properties.name)} onSearch={handleDoneSearch}
                     onClear={handleClear}/>
             <MapContainer center={[

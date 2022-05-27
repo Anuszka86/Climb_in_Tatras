@@ -1,0 +1,31 @@
+@use "variables";
+
+.weather {
+  height: 80vh;
+  background-image: url(../gerlach_damian.png);
+  background-size: cover;
+
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    align-self: center;
+    color: variables.$color2;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(210, 225, 221, 0.5);
+    padding: 10px 40px;
+    border-radius: 15px;
+  }
+}
+.weather-now {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: variables.$color5;
+  opacity: 0.7;
+ width: fit-content;
+  border-radius: 10px;
+  margin: 2rem;
+  box-shadow: 0 6px 6px #00000029;
+}
