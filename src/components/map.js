@@ -5,7 +5,7 @@ import {Search} from "./search";
 import mountainData from "../data/mountainData.json";
 import iconMarker from "../assets/marker-top.svg"
 import {ChangeView} from "./changeMapView";
-import "../assets/SCSS/_map.scss"
+import "../SCSS/_map.scss"
 import 'leaflet/dist/leaflet.css';
 
 import {point} from "leaflet/dist/leaflet-src.esm";

@@ -4,7 +4,7 @@ import mountainData from "../data/mountainData.json";
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.css';
 import {carouselData} from "./carouselData";
-import "../assets/SCSS/_topoNavigation.scss";
+import "../SCSS/_topoNavigation.scss";
 import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 

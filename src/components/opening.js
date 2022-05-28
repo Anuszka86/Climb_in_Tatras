@@ -1,5 +1,5 @@
 import React from 'react';
-import "../assets/SCSS/_opening.scss";
+import "../SCSS/_opening.scss";
 import {Link} from "react-router-dom";
 
 export function Opening() {

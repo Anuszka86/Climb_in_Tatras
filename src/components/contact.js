@@ -1,5 +1,5 @@
 import React from 'react';
-import "../assets/SCSS/_contact.scss"
+import "../SCSS/_contact.scss"
 import iconMail from "../assets/Mail-Photo-icon.png";
 export function Contact() {
     return (

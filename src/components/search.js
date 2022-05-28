@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react';
 import iconSearch from "../assets/search.svg";
-import "./../assets/SCSS/_search.scss";
+import "../SCSS/_search.scss";
 import iconMarker from "../assets/marker-top.svg"
 
 

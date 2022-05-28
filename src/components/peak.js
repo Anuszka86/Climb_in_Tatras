@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import iconWall from "../assets/wall.png";
 import iconLink from "../assets/mountain-route.png";
-import "../assets/SCSS/_peak.scss";
+import "../SCSS/_peak.scss";
 export function Peak({peak}) {
 
 

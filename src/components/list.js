@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./../assets/SCSS/_peaksList.scss"
+import "../SCSS/_peaksList.scss"
 import {Peak} from "./peak";
 
 export function PeaksList({data}) {
